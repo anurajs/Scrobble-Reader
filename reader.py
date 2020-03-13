@@ -18,7 +18,6 @@ payload= {
 }
 
 while(True):
-    time.sleep(4)
     r = requests.get(url,payload)
     details = r.json()
     details = details['recenttracks']['track'][0]
@@ -29,3 +28,4 @@ while(True):
     print('<<'+ name + ' | ' + artist + ">> ")
     r.close()
     file.close()
+    time.sleep(4)
