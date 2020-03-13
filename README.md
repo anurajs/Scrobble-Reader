@@ -6,7 +6,7 @@ first run:
 
 `pip3 install requests`
 
-Change the api key and username in `reader.py` to your own
+Change the api key and username in `config.json` to your own
 
 You can get an api key [here](https://www.last.fm/api/account/create)
 
