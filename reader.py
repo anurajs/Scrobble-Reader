@@ -7,6 +7,9 @@ class Song ():
         self.title = title
         self.artist = artist
     
+    def __hash__(self):
+        return hash((self.title,self.artist))
+
     def __eq__(self, value):
         if value is None:
             return False
