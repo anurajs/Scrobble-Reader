@@ -6,9 +6,11 @@ payload = {
     'method':'user.getrecenttracks',
     'api_key': process.env.API_KEY,
     'format':'json',
-    'user': process.env.USER,
+    'user': process.env.USER_NAME,
     'limit':1
 }
+
+console.log(process.env.USER_NAME)
 
 lastSong = null
 
@@ -25,6 +27,7 @@ const getSong = (payload) => {
                 }
                 resolve(song)
             }else{
+                console.log(resp.request)
                 reject("Not listening to anything")
             }
         }).catch(err=>{
