@@ -1,0 +1,24 @@
+{
+  "name": "Scrobble-Reader",
+  "version": "1.0.0",
+  "description": "Must have python and pip installed, pip is already installed for windows users who have python installed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run" : "npm index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anurajs/Scrobble-Reader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anurajs/Scrobble-Reader/issues"
+  },
+  "homepage": "https://github.com/anurajs/Scrobble-Reader#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
