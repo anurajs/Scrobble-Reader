@@ -25,7 +25,6 @@ const getSong = (payload) => {
                 }
                 resolve(song)
             }else{
-                console.log(resp.request)
                 reject("Not listening to anything")
             }
         }).catch(err=>{
