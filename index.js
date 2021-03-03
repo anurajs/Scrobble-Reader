@@ -1,14 +1,12 @@
 const fs = require('fs');
 const axios = require('axios').default
-
-data = fs.readFileSync('config.json',{encoding:'utf-8'})
-const config = JSON.parse(data)
+require('dotenv').config()
 
 payload = {
     'method':'user.getrecenttracks',
-    'api_key':config['api_key'],
+    'api_key': process.env.API_KEY,
     'format':'json',
-    'user':config['user'],
+    'user': process.env.USER,
     'limit':1
 }
 
