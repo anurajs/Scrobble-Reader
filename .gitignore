@@ -1,8 +1,6 @@
 nowplaying.txt
 config.json
-config.json
-config.json
-config.json
-config.json
 node_modules
 .vscode
+.env
+.vscode/settings.json
