@@ -28,7 +28,11 @@ const getSong = (payload) => {
                 reject("Not listening to anything")
             }
         }).catch(err=>{
-            reject(err)
+            if(err.response.data.error == 6){
+                reject("Check your api key or username in the .env file")
+            }else {
+                reject(err.response.data.message)
+            }
         }
     )})
 }
