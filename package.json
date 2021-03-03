@@ -1,5 +1,5 @@
 {
-  "name": "ScrobbleReader",
+  "name": "Scrobble-Reader",
   "version": "1.0.0",
   "description": "Must have python and pip installed, pip is already installed for windows users who have python installed.",
   "main": "index.js",
