@@ -18,11 +18,11 @@ const getSong = (payload) => {
         axios.get(url,{params:payload}).then(resp =>{
             let details = resp.data;
             details = details['recenttracks']['track'][0]
-            let song = {
-                name:details['name'],
-                artist:details['artist']['#text']
-            }
             if(details['@attr'] && details['@attr'].nowplaying){
+                let song = {
+                    name:details['name'],
+                    artist:details['artist']['#text']
+                }
                 resolve(song)
             }else{
                 reject("Not listening to anything")
@@ -42,7 +42,7 @@ setInterval(()=>{
         console.log(song);
         fs.writeFileSync('nowplaying.txt',`<< ${song.name} | ${song.artist} >>  `)
     }).catch(err => {
-        console.log(err.data.message)
+       console.log(err) 
     })
 },4000)
 
