@@ -10,8 +10,6 @@ payload = {
     'limit':1
 }
 
-console.log(process.env.USER_NAME)
-
 lastSong = null
 
 const getSong = (payload) => {
