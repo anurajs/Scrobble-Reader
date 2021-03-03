@@ -2,5 +2,4 @@ nowplaying.txt
 config.json
 node_modules
 .vscode
-.env
 .vscode/settings.json
