@@ -1,18 +1,22 @@
 # Scrobble-Reader
 
-Must have python and pip installed, pip is already installed for windows users who have python installed.
+Must have NodeJS and NPM installed.
 
 first run:
 
-`pip3 install requests`
+`npm i`
 
-Change the api key and username in `config.json` to your own
+Create a file called `.env` and insert your username and api key into the file
+```
+API_KEY=<API_KEY_HERE>
+USER=<USER_NAME_HERE>
+```
 
 You can get an api key [here](https://www.last.fm/api/account/create)
 
 Simply run
 
-`python3 reader.py`
+`npm run run`
 
 After this the currently playing song will be in
 
