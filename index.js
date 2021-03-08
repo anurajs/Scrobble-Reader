@@ -38,7 +38,7 @@ const getSong = (payload) => {
 }
 
 setInterval(()=>{
-    Promise.resolve(getSong(payload)).then(song => {
+    getSong(payload).then(song => {
         if(JSON.stringify(song) == JSON.stringify(lastSong)){
             return
         }
