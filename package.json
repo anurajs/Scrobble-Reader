@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/anurajs/Scrobble-Reader#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "dotenv": "^8.2.0"
   }
 }
